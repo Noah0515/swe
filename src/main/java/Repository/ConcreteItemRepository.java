@@ -1,28 +1,28 @@
 package Repository;
 
-import Entity.Food;
-import org.springframework.stereotype.Repository;
+import Entity.Item;
 import Entity.Restaurant;
+import org.springframework.stereotype.Repository;
+
 import java.util.Optional;
 
 @Repository
-public class ConcreteFoodRepository implements FoodRepository {
+public class ConcreteItemRepository implements ItemRepository {
 
     @Override
-    public void save(Food food) {
-
+    public void save(Item item) {
+        // 기본 구현 제공
     }
 
     @Override
-    public Optional<Food> findByFoodNameAndRestaurantIdAndCategory(String foodName, Long restaurantId, String category) {
+    public Optional<Item> findByItemNameAndRestaurantIdAndCategory(String itemName, Long restaurantId, String category) {
         return Optional.empty();
     }
 
     @Override
-    public Food createFood(String foodName, int quantity, String category, String expirationDate, double foodPrice,
-                           String purchaseDate, String supplier, boolean isDefective, String allergens, String nutrients,
-                           int usagePeriod, String storageLocation, Long restaurantId) {
-        return new Food();
+    public Item createItem(String itemName, int quantity, String category, double itemPrice,
+                           String supplier, boolean isDefective, int usagePeriod, String storageLocation, Long restaurantId) {
+        return new Item();
     }
 
     @Override

@@ -17,16 +17,16 @@ public class FoodController {
 
 
     @GetMapping
-    public String addFoodPage(Model model, HttpSession session) { return ""; }
+    public String showFoodPage(Model model, HttpSession session) { return ""; }
     @PostMapping
     public String addFood(FoodDTO foodDTO, Model model, HttpSession session) { return ""; }
     @GetMapping
     public String getFoods(Model model, HttpSession session, String category) { return ""; }
     @GetMapping
-    public String getFoodDetail(Model model, HttpSession session, String foodId) { return ""; }
+    public String getFoodDetail(Model model, HttpSession session, Long foodId) { return ""; }
     @GetMapping
     public String searchFoods(Model model, HttpServletRequest request, HttpSession session) { return ""; }
     @PostMapping
-    public String deleteFood(HttpServletRequest request, Model model, HttpSession session, String foodId) { return ""; }
-    public Optional<Food> findFoodById(Long id) { return Optional.empty(); }
+    public String deleteFood(HttpServletRequest request, Model model, HttpSession session, Long foodId) { return ""; }
+
 }
