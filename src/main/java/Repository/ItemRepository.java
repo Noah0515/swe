@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ItemRepository extends CrudRepository<Restaurant, Long> {
+public interface ItemRepository extends CrudRepository<Item, Long> {
 
-    void save(Item item);
+
     Optional<Item> findByItemNameAndRestaurantIdAndCategory(String itemName, Long restaurantId, String category);
 
     Item createItem(String itemName, int quantity, String category, double itemPrice,

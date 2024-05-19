@@ -1,18 +1,15 @@
 package Repository;
 
 import Entity.Item;
-import Entity.Restaurant;
 import org.springframework.stereotype.Repository;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public class ConcreteItemRepository implements ItemRepository {
 
-    @Override
-    public void save(Item item) {
-        // 기본 구현 제공
-    }
+    private List<Item> items = new ArrayList<>(); // 물건 데이터를 저장하는 리스트
 
     @Override
     public Optional<Item> findByItemNameAndRestaurantIdAndCategory(String itemName, Long restaurantId, String category) {
@@ -26,17 +23,17 @@ public class ConcreteItemRepository implements ItemRepository {
     }
 
     @Override
-    public <S extends Restaurant> S save(S entity) {
+    public <S extends Item> S save(S entity) {
         return null;
     }
 
     @Override
-    public <S extends Restaurant> Iterable<S> saveAll(Iterable<S> entities) {
+    public <S extends Item> Iterable<S> saveAll(Iterable<S> entities) {
         return null;
     }
 
     @Override
-    public Optional<Restaurant> findById(Long aLong) {
+    public Optional<Item> findById(Long aLong) {
         return Optional.empty();
     }
 
@@ -46,12 +43,12 @@ public class ConcreteItemRepository implements ItemRepository {
     }
 
     @Override
-    public Iterable<Restaurant> findAll() {
+    public Iterable<Item> findAll() {
         return null;
     }
 
     @Override
-    public Iterable<Restaurant> findAllById(Iterable<Long> longs) {
+    public Iterable<Item> findAllById(Iterable<Long> longs) {
         return null;
     }
 
@@ -65,7 +62,7 @@ public class ConcreteItemRepository implements ItemRepository {
     }
 
     @Override
-    public void delete(Restaurant entity) {
+    public void delete(Item entity) {
     }
 
     @Override
@@ -73,7 +70,7 @@ public class ConcreteItemRepository implements ItemRepository {
     }
 
     @Override
-    public void deleteAll(Iterable<? extends Restaurant> entities) {
+    public void deleteAll(Iterable<? extends Item> entities) {
     }
 
     @Override

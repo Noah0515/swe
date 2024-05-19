@@ -2,16 +2,14 @@ package Repository;
 
 import Entity.Food;
 import org.springframework.stereotype.Repository;
-import Entity.Restaurant;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public class ConcreteFoodRepository implements FoodRepository {
 
-    @Override
-    public void save(Food food) {
-
-    }
+    private List<Food> foods = new ArrayList<>(); // 음식 데이터를 저장하는 리스트
 
     @Override
     public Optional<Food> findByFoodNameAndRestaurantIdAndCategory(String foodName, Long restaurantId, String category) {
@@ -26,17 +24,17 @@ public class ConcreteFoodRepository implements FoodRepository {
     }
 
     @Override
-    public <S extends Restaurant> S save(S entity) {
+    public <S extends Food> S save(S entity) {
         return null;
     }
 
     @Override
-    public <S extends Restaurant> Iterable<S> saveAll(Iterable<S> entities) {
+    public <S extends Food> Iterable<S> saveAll(Iterable<S> entities) {
         return null;
     }
 
     @Override
-    public Optional<Restaurant> findById(Long aLong) {
+    public Optional<Food> findById(Long aLong) {
         return Optional.empty();
     }
 
@@ -46,12 +44,12 @@ public class ConcreteFoodRepository implements FoodRepository {
     }
 
     @Override
-    public Iterable<Restaurant> findAll() {
+    public Iterable<Food> findAll() {
         return null;
     }
 
     @Override
-    public Iterable<Restaurant> findAllById(Iterable<Long> longs) {
+    public Iterable<Food> findAllById(Iterable<Long> longs) {
         return null;
     }
 
@@ -65,7 +63,7 @@ public class ConcreteFoodRepository implements FoodRepository {
     }
 
     @Override
-    public void delete(Restaurant entity) {
+    public void delete(Food entity) {
     }
 
     @Override
@@ -73,7 +71,7 @@ public class ConcreteFoodRepository implements FoodRepository {
     }
 
     @Override
-    public void deleteAll(Iterable<? extends Restaurant> entities) {
+    public void deleteAll(Iterable<? extends Food> entities) {
     }
 
     @Override

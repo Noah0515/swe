@@ -61,4 +61,9 @@ public class GraphManager {
     public String createGraph(String content, String data, Graph graph) {
         return "";
     }
+
+    public void updateGraph(Long id, double income, double expense, double sales, LocalDate date) { }
+
+    public void displayAllGraphs() { }
+
 }

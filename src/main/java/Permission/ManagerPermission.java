@@ -7,8 +7,8 @@ import Entity.Graph;
 import Entity.Schedule;
 import Entity.Worker;
 import Entity.Staff;
-/*import Manager.ExpenseManager;
-import Manager.IncomeManager;*/
+import Manager.ExpenseManager;
+import Manager.IncomeManager;
 import Manager.*;
 
 import java.time.LocalDate;
@@ -19,9 +19,8 @@ public class ManagerPermission extends StaffPermission {
     private ScheduleManager scheduleManager;
     private WorkerManager workerManager;
     private GraphManager graphManager;
-    //private ExpenseManager expenseManager;
-    // private IncomeManager incomeManager;
-   // 22,23 번째 줄 주석이랑 ExpenseManger 클래스 만드시고 위에 10,11번째 줄 주석 모두 해제 해주세요
+    private ExpenseManager expenseManager;
+    private IncomeManager incomeManager;
 
     @Override
     public List<Schedule> filterObjectionToPermission(int level) { return null; }
