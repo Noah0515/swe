@@ -1,7 +1,11 @@
 package Permission;
 
 import Manager.InventoryManager;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class StaffPermission implements Permission {
 
     private static final int PERMISSION_LEVEL = 2;

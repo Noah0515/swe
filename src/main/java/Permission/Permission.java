@@ -9,6 +9,7 @@ import Entity.Staff;
 import Entity.Worker;
 import java.util.List;
 
+
 public interface Permission {
     Long restaurantId = null;
     int PERMISSION_LEVEL = Integer.parseInt(null);

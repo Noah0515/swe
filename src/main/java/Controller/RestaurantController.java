@@ -2,6 +2,7 @@ package Controller;
 
 import DTO.RestaurantDTO;
 import Entity.Schedule;
+import Repository.UserRepository;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import Repository.RestaurantRepository;
@@ -17,12 +18,14 @@ public class RestaurantController {
     private RestaurantRepository restaurantRepository;
     private ScheduleRepository scheduleRepository;
     private WorkerRepository workerRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    public RestaurantController(RestaurantRepository restaurantRepository, ScheduleRepository scheduleRepository, WorkerRepository workerRepository){
+    public RestaurantController(RestaurantRepository restaurantRepository, ScheduleRepository scheduleRepository, WorkerRepository workerRepository, UserRepository userRepository){
         this.restaurantRepository = restaurantRepository;
         this.scheduleRepository = scheduleRepository;
         this.workerRepository = workerRepository;
+        this.userRepository = userRepository;
     }
 
     @PostMapping()

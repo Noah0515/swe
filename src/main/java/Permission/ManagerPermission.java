@@ -10,10 +10,14 @@ import Entity.Staff;
 import Manager.ExpenseManager;
 import Manager.IncomeManager;
 import Manager.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Getter
+@Setter
 public class ManagerPermission extends StaffPermission {
     private static final int PERMISSION_LEVEL = 1;
     private ScheduleManager scheduleManager;
