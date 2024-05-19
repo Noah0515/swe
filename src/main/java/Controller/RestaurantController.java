@@ -33,6 +33,9 @@ public class RestaurantController {
     public String showRestaurantPage(Model model, HttpSession session){
         return "";
     }
-
+    @GetMapping()
+    public String enterRestaurantPage(Model model, HttpSession session, Long restaurantId){
+        return "";
+    }
 
 }
