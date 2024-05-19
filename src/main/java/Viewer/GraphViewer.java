@@ -7,5 +7,14 @@ import org.springframework.stereotype.Component;
 public class GraphViewer {
     private Graph displayData;
 
-    public void viewGraph(Graph graph) { }
+    public void viewGraph(Graph graphData) { }
+
+    public void refreshDisplay() { }
+
+    public void selectDateRange() { }
+
+    public void deleteData() { }
+
+    public void collectData(Graph dataCollect) { }
+
 }
