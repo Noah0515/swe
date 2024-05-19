@@ -4,6 +4,7 @@ import Entity.Restaurant;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PathVariable;
+import Entity.Food;
 
 import java.util.List;
 import java.util.Optional;

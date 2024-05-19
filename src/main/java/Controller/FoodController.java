@@ -6,7 +6,10 @@ import org.springframework.ui.Model;
 import java.util.Optional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
+import Inventory.FoodInventory;
+import Repository.FoodRepository;
+import DTO.FoodDTO;
+import Entity.Food;
 @Controller
 public class FoodController {
     private FoodRepository foodRepository;
