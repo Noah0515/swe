@@ -2,20 +2,21 @@ package Manager;
 
 import Entity.Graph;
 import Viewer.GraphViewer;
-import Repository.GraphRepository;
 import java.time.LocalDate;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class GraphManager {
-    private final GraphRepository graphRepo;
+    private List<Graph> manageGraphs;
+
     private final GraphViewer graphViewer;
     private boolean isManaging;
 
     @Autowired
-    public GraphManager(GraphRepository graphRepo, GraphViewer graphViewer) {
-        this.graphRepo = graphRepo;
+    public GraphManager(GraphViewer graphViewer) {
         this.graphViewer = graphViewer;
         this.isManaging = true;
     }
