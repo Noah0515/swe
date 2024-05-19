@@ -2,12 +2,14 @@ package Repository;
 
 import Entity.Food;
 import org.springframework.stereotype.Repository;
-import Entity.Restaurant;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public class ConcreteFoodRepository implements FoodRepository {
 
+    private List<Food> foods = new ArrayList<>(); // 음식 데이터를 저장하는 리스트
 
     @Override
     public Optional<Food> findByFoodNameAndRestaurantIdAndCategory(String foodName, Long restaurantId, String category) {

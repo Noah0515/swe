@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Optional;
 @Repository
 public class ConcreteGraphRepository implements GraphRepository {
+
+    private List<Graph> graphs = new ArrayList<>(); // 그래프 데이터를 저장하는 리스트
+
     @Override
     public List<Graph> findByIncome(double income) {
         return new ArrayList<>();

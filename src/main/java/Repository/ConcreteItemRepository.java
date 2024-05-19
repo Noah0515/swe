@@ -1,14 +1,15 @@
 package Repository;
 
 import Entity.Item;
-import Entity.Restaurant;
 import org.springframework.stereotype.Repository;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public class ConcreteItemRepository implements ItemRepository {
 
+    private List<Item> items = new ArrayList<>(); // 물건 데이터를 저장하는 리스트
 
     @Override
     public Optional<Item> findByItemNameAndRestaurantIdAndCategory(String itemName, Long restaurantId, String category) {
