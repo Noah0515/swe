@@ -54,7 +54,7 @@ public class InventoryManager {
         return true;
     }
 
-    // Item related methods
+
     public void saveItem(ItemDTO itemDTO) {
 
     }
