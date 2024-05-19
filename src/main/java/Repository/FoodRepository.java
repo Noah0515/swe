@@ -10,9 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface FoodRepository extends CrudRepository<Restaurant, Long>  {
+public interface FoodRepository extends CrudRepository<Food, Long>  {
 
-    void save(Food food);
     Optional<Food> findByFoodNameAndRestaurantIdAndCategory(String foodName, Long restaurantId, String category);
 
     Food createFood(String foodName, int quantity, String category, String expirationDate, double foodPrice,

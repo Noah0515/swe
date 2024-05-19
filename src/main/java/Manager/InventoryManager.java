@@ -4,7 +4,6 @@ import DTO.FoodDTO;
 import DTO.ItemDTO;
 import Entity.Food;
 import Entity.Item;
-import Entity.Restaurant;
 import Inventory.FoodInventory;
 import Inventory.ItemInventory;
 import Repository.FoodRepository;
@@ -31,8 +30,6 @@ public class InventoryManager {
         this.itemInventory = itemInventory;
     }
 
-
-    public void saveFood(FoodDTO foodDTO) { }
 
     public Optional<Food> findFoodById(Long id) {
         return Optional.empty();
