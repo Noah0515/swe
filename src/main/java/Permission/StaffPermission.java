@@ -3,6 +3,7 @@ package Permission;
 import Manager.InventoryManager;
 
 public class StaffPermission implements Permission {
+
     private static final int PERMISSION_LEVEL = 2;
     private InventoryManager inventoryManager;
 
