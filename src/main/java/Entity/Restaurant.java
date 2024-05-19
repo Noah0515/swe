@@ -1,11 +1,15 @@
 package Entity;
 
 import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.sql.Date;
 import java.util.List;
 
 @Builder
+@Getter
+@Setter
 public class Restaurant {
     private Long id;
     private List<Worker> workers;
