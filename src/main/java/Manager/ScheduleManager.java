@@ -8,6 +8,7 @@ import Entity.Worker;
 import java.util.List;
 
 public class ScheduleManager {
+
     private IntergratedSchedule schedules;
     private List<Schedule> objectionLIst;
     private boolean isManaging;
@@ -24,4 +25,5 @@ public class ScheduleManager {
     public void changeSchedule(Schedule schedule){
 
     }
+
 }
