@@ -1,7 +1,10 @@
 package Entity;
 
+import lombok.Builder;
+
 import java.time.LocalDateTime;
 
+@Builder
 public class Schedule {
     private Long restaurantId;
     private LocalDateTime startTime;

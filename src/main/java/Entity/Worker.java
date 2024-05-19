@@ -1,4 +1,5 @@
 package Entity;
+import Aggregates.IntergratedSchedule;
 import Permission.Permission;
 
 public class Worker {
@@ -9,7 +10,7 @@ public class Worker {
 
     private int permissionLevel;
     private String bankAccount;
-    //private IntergratedSchedule schedules;
+    private IntergratedSchedule schedules;
     private long salary;
     private int hourlywage;
 }
