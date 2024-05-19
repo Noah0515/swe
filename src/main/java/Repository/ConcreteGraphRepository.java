@@ -2,7 +2,7 @@ package Repository;
 
 import Entity.Graph;
 import org.springframework.stereotype.Repository;
-
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -37,7 +37,10 @@ public class ConcreteGraphRepository implements GraphRepository {
     public List<Graph> getSalesData() {
         return new ArrayList<>();
     }
-
+    @Override
+    public List<Graph> findByDateBetween(LocalDate startDate, LocalDate endDate) {
+        return new ArrayList<>();
+    }
     @Override
     public <S extends Graph> S save(S entity) {
         return null;

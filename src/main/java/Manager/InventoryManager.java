@@ -10,7 +10,6 @@ import Repository.FoodRepository;
 import Repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 
 @Service
@@ -29,7 +28,6 @@ public class InventoryManager {
         this.itemRepository = itemRepository;
         this.itemInventory = itemInventory;
     }
-
 
     public Optional<Food> findFoodById(Long id) {
         return Optional.empty();
@@ -50,7 +48,6 @@ public class InventoryManager {
     public Boolean selectFood() {
         return true;
     }
-
 
     public void saveItem(ItemDTO itemDTO) {
 
