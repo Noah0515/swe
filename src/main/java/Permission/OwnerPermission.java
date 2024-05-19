@@ -1,18 +1,21 @@
-package Manager;
+package Permission;
 
-import Aggregates.IntergratedSchedule;
 import DTO.ScheduleDTO;
 import Entity.Schedule;
 import Entity.Worker;
+import Manager.ScheduleManager;
 
 import java.util.List;
 
-public class ScheduleManager {
+public class OwnerPermission {
+    private int Permission_Level = 0;
 
-    private IntergratedSchedule schedules;
-    private List<Schedule> objectionLIst;
-    private boolean isManaging;
+    public void invite(String phone){
 
+    }
+    public void closure(){
+
+    }
     public List<Schedule> filterObjectionToPermission(int level){
         return null;
     }
@@ -25,5 +28,4 @@ public class ScheduleManager {
     public void changeSchedule(Schedule schedule){
 
     }
-
 }

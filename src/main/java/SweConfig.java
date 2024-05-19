@@ -31,7 +31,8 @@ public class SweConfig {
         return scheduleRepository();
     }
 
-    @Bean WorkerRepository workerRepository(){
+    @Bean
+    WorkerRepository workerRepository(){
         return workerRepository();
     }
 

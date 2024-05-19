@@ -13,6 +13,4 @@ public interface ScheduleRepository extends CrudRepository {
         return null;
     };
 
-    @Override
-    boolean existsById(Object o);
 }

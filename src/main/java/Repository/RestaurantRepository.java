@@ -10,8 +10,6 @@ import java.util.Optional;
 
 @Repository
 public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
-    @Override
-    List<Restaurant> findAll();
     Optional<Restaurant> findById(@PathVariable Long id);
 
 }
