@@ -1,7 +1,11 @@
 package Entity;
 import Aggregates.IntergratedSchedule;
 import Permission.Permission;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Worker {
     private Long id;
     private String workerEmail;
@@ -13,4 +17,5 @@ public class Worker {
     private IntergratedSchedule schedules;
     private long salary;
     private int hourlywage;
+
 }

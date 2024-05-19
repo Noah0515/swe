@@ -14,7 +14,7 @@ import Manager.*;
 import java.time.LocalDate;
 import java.util.List;
 
-public class ManagerPermission implements Permission {
+public class ManagerPermission extends StaffPermission {
     private static final int PERMISSION_LEVEL = 1;
     private ScheduleManager scheduleManager;
     private WorkerManager workerManager;

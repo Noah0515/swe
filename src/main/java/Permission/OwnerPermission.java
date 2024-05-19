@@ -7,7 +7,7 @@ import Manager.ScheduleManager;
 
 import java.util.List;
 
-public class OwnerPermission {
+public class OwnerPermission extends ManagerPermission{
     private int Permission_Level = 0;
 
     public void invite(String phone){

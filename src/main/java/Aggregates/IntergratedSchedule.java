@@ -9,4 +9,7 @@ public class IntergratedSchedule {
     public void showSchedule(){
 
     }
+    public void addSchedule(Schedule newSchedule){
+
+    }
 }

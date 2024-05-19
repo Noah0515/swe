@@ -22,7 +22,7 @@ public class ScheduleManager {
     public void createSchedule(ScheduleDTO dto, Worker Maneger){
 
     }
-    public void changeSchedule(Schedule schedule){
+    public void changeSchedule(Schedule oldSchedule, Schedule newSchedule){
 
     }
 

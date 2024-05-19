@@ -27,7 +27,7 @@ public class KakaoApi {
     public void kakaoLogout(String accessToken){
 
     };
-    public boolean kakaoVerification(String email){
+    public boolean kakaoVerification(String authorizationCode){
         return false;
     };
 

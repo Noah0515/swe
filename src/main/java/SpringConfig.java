@@ -1,5 +1,4 @@
 import API.KakaoApi;
-import Entity.Restaurant;
 import Repository.RestaurantRepository;
 import Repository.ScheduleRepository;
 import Repository.UserRepository;
@@ -7,11 +6,8 @@ import Repository.WorkerRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.List;
-import java.util.Optional;
-
 @Configuration
-public class SweConfig {
+public class SpringConfig {
     @Bean
     KakaoApi kakaoApi(){
         return new KakaoApi();

@@ -42,7 +42,7 @@ public class UserController {
         return "";
     };
     @PostMapping
-    public String checkVerification(Model model, HttpSession session){
+    public String checkVerification(Model model, HttpSession session,  String code){
         return"";
     }
 }
